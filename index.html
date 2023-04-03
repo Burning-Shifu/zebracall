@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ae=edge">
+  <title>ZebraCall</title>
+  <link type="image/png" rel="shortcut icon" href="img/favicon.png">
+  <link type="image/x-icon" rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <!-- Rating Mail.ru counter -->
+  <script type="text/javascript">
+    var _tmr = window._tmr || (window._tmr = []);
+    _tmr.push({ id: "3205890", type: "pageView", start: (new Date()).getTime() });
+    (function (d, w, id) {
+      if (d.getElementById(id)) return;
+      var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+      ts.src = "https://top-fwz1.mail.ru/js/code.js";
+      var f = function () { var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s); };
+      if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+    })(document, window, "topmailru-code");
+  </script>
+  <noscript>
+    <div>
+      <img src="https://top-fwz1.mail.ru/counter?id=3205890;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+    </div>
+  </noscript>
+  <!-- //Rating Mail.ru counter -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(86128925, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/86128925" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner d-flex">
+
+          <div class="burger">
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+            <div class="burger__line"></div>
+          </div>
+
+          <div class="header__block d-flex">
+            <div class="header__logo">
+              ZEBRA<span class="blue">CALL</span>
+            </div>
+
+            <div class="socials d-flex">
+              <ul class="socials__list d-flex">
+                <li class="socials__item d-flex">
+                  <a href="https://wa.me/79601395125" class="socials__link">
+                    <svg class="socials__svg">
+                      <use href='#wa'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item d-flex">
+                  <a href="https://t.me/ZebraCall" class="socials__link">
+                    <svg class="socials__svg">
+                      <use href='#telegram'></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item d-flex">
+                  <a href="https://viber.click/79601395125" class="socials__link">
+                    <svg class="socials__svg">
+                      <use href='#viber'></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="tel:+79601395125" class="socials__phone">+7(960)139-51-25</a>
+            </div>
+          </div>
+
+          <nav class="menu">
+            <ul class="menu__list d-flex">
+              <li class="menu__item">
+                <a href="#salary" class="menu__item-link">Зарплата</a>
+              </li>
+              <li class="menu__item">
+                <a href="#schedule" class="menu__item-link">График</a>
+              </li>
+              <li class="menu__item">
+                <a href="#benefits" class="menu__item-link">Преимущества</a>
+              </li>
+              <li class="menu__item">
+                <a href="#team" class="menu__item-link">Обучение</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <section class="remote section">
+        <div class="container">
+          <div class="remote__inner d-flex">
+            <div class="col-2 remote__descr d-flex">
+              <div class="title remote__title">
+                Работа оператором call-центра на дому на входящих заявках
+              </div>
+              <div class="remote__content">
+                <p class="remote__text">
+                  <span class="bold">Оставьте заявку</span> и станьте частью команды ZEBRACALL!
+                </p>
+                <p class="remote__text">
+                  Работайте из дома в удобное для вас время, совмещайте работу со своим графиком, развивайтесь и получайте достойную зарплату!
+                </p>
+                <p class="remote__text bold">
+                  Только сегодня вы можете <span class="blue">БЕСПЛАТНО</span> пройти обучение, которое стоит <span class="blue" style="white-space:nowrap;">990 рублей!</span>
+                </p>
+              </div>
+              <div class="remote__timer-block d-flex">
+                До конца акции осталось:
+                <div class="remote__timer-wrap bold">
+                  <span id="hours"></span> <span id="hours-text">часа</span>
+                  <span id="minutes"></span> <span>мин</span>
+                  <span id="seconds"></span> <span>сек</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 remote__img-block">
+              <div class="remote__img-wrap">
+                <picture>
+                  <source srcset="img/content/remote-work-all.svg" type="image/webp"><img class="remote__img" src="img/content/remote-work-all.svg" alt="Девушка, работающая в поддержке пользователей">
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex remote__btns">
+            <button id="send" class="btn remote__btn script__btn">Оставить заявку</button>
+            <div>
+              <span class="remote__btn-uptext">
+                Уже есть опыт?
+              </span>
+              <a id="send" href="work.html" class="btn btn--blue remote__btn">Начать работать</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="suitable section">
+        <div class="container">
+          <div class="title title--mb-50">
+            ВАМ ПОДХОДИТ ЭТА РАБОТА, ЕСЛИ:
+          </div>
+          <div class="suitable__content d-flex">
+            <div class="suitable__item d-flex">
+              <span class="suitable__check"></span>
+              <span class="suitable__text">
+                Вы хотите совмещать работу со своим графиком
+              </span>
+            </div>
+            <div class="suitable__item d-flex">
+              <span class="suitable__check"></span>
+              <span class="suitable__text">
+                Мечтаете работать из дома и не тратить время и деньги на дорогу
+              </span>
+            </div>
+            <div class="suitable__item d-flex">
+              <span class="suitable__check"></span>
+              <span class="suitable__text">
+                Вы хотите работать только на входящих заявках, не занимаясь поиском клиентов
+              </span>
+            </div>
+            <div class="suitable__item d-flex">
+              <span class="suitable__check"></span>
+              <span class="suitable__text">
+                У вас есть лишь несколько свободных часов в день
+              </span>
+            </div>
+            <div class="suitable__item d-flex">
+              <span class="suitable__check"></span>
+              <span class="suitable__text">
+                Вы хотите развиваться и освоить новую профессию
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="expectations section">
+        <div class="container">
+          <div class="expectations__inner">
+            <div class="title title--mb-50">КОГО МЫ ИЩЕМ:</div>
+            <div class="expectations__block d-flex">
+              <div class="expectations__part expectations__left">
+                <div class="expectations__item d-flex">
+                  <div>
+                    <span class="bold">Студентов,</span> которые хотят стать материально независимыми от родителей
+                  </div>
+                </div>
+                <div class="expectations__item d-flex">
+                  <div>
+                    <span class="bold">Профессиональных операторов,</span> кто хочет присоединиться к успешной и стабильной команде
+                  </div>
+                </div>
+                <div class="expectations__item d-flex">
+                  <div>
+                    Желающих получить <span class="bold">новую профессию и достойный заработок</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="expectations__wrap-img">
+                <picture>
+                  <source srcset="img/content/portrait-man-woman.svg" type="image/webp"><img src="img/content/portrait-man-woman.svg" class="expectations__img" alt="">
+                </picture>
+              </div>
+
+
+              <div class="expectations__part expectations__right">
+                <div class="expectations__item d-flex">
+                  <div>
+                    <span class="bold">Мамочек,</span> которые хотят зарабатывать, совмещая работу с заботой о семье и детях
+                  </div>
+                </div>
+                <div class="expectations__item d-flex">
+                  <div>
+                    Желающих работать <span class="bold">удаленно</span> и тех, кому нужен <span class="bold">гибкий график</span>
+                  </div>
+                </div>
+                <div class="expectations__item d-flex">
+                  <div>
+                    <span class="bold">Пенсионеров,</span> которые хотят получать дополнительный заработок
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="salary section" id="salary">
+        <div class="container">
+          <div class="title blue">
+            Сколько можно заработать
+          </div>
+          <p class="salary__text">
+            Cредний заработок за
+            <span class="blue bold salary__month">месяц</span>
+          </p>
+
+          <div class="salary__block d-flex">
+            <div class="salary-item">
+              <div class="salary-item__rang">Оператор</div>
+              <div class="salary-item__money">
+                37 260 рублей
+              </div>
+              <div class="salary-item__exp">
+                опыт работы <span class="blue bold">1-3 месяца</span>
+              </div>
+            </div>
+            <div class="salary-item">
+              <div class="salary-item__rang">Эксперт</div>
+              <div class="salary-item__money">
+                58 900 рублей
+              </div>
+              <div class="salary-item__exp">
+                опыт работы <span class="blue bold">3-6 месяцев</span>
+              </div>
+            </div>
+            <div class="salary-item">
+              <div class="salary-item__rang">Профи</div>
+              <div class="salary-item__money">
+                92 308 рублей
+              </div>
+              <div class="salary-item__exp">
+                опыт работы <span class="blue bold">6+ месяцев</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="schedule" id="schedule">
+        <div class="container">
+          <div class="title">
+            ИНДИВИДУАЛЬНЫЙ ГРАФИК
+          </div>
+          <p class="schedule__text">
+            График работы устанавливается после обучения с руководителем на наделю вперед с учетом вашего свободного времени.
+          </p>
+          <button id="send" class="btn btn--blue schedule__btn script__btn">Оставить заявку</button>
+        </div>
+      </section>
+
+      <section class="benefits section" id="benefits">
+        <div class="container">
+          <div class="title title--mb-50 blue benefits__title">
+            ПРЕИМУЩЕСТВА УДАЛЕННОЙ РАБОТЫ В ZEBRA<span class="blue">CALL</span>
+          </div>
+          <div class="benefits__content d-flex">
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/phone.svg" type="image/webp"><img class="benefits__pic" src="img/content/phone.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Получайте только входящие заявки
+              </span>
+              <span class="benefits__text">
+                Ежедневно к нам обращаются более 10 000 клиентов, заинтересованных в покупке!
+              </span>
+            </div>
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/calendar.svg" type="image/webp"><img class="benefits__pic" src="img/content/calendar.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Выбирайте удобный график
+              </span>
+              <span class="benefits__text">
+                Возможность совмещать работу со своими делами
+              </span>
+            </div>
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/prize.svg" type="image/webp"><img class="benefits__pic" src="img/content/prize.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Карьерный рост
+              </span>
+              <span class="benefits__text">
+                За несколько месяцев от оператора до супервайзера
+              </span>
+            </div>
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/study.svg" type="image/webp"><img class="benefits__pic" src="img/content/study.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Обучение за счет компании
+              </span>
+              <span class="benefits__text">
+                Корпоративное обучение даст возможность повышать свой заработок
+              </span>
+            </div>
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/money.svg" type="image/webp"><img class="benefits__pic" src="img/content/money.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Выплаты каждую неделю
+              </span>
+              <span class="benefits__text">
+                10-18 тысяч рублей в неделю. Не нужно ждать заработанных денег целый месяц
+              </span>
+            </div>
+            <div class="benefits__item d-flex">
+              <picture>
+                <source srcset="img/content/woman-wheel.svg" type="image/webp"><img class="benefits__pic" src="img/content/woman-wheel.svg">
+              </picture>
+              <span class="benefits__item-title">
+                Не тратьте время на дорогу
+              </span>
+              <span class="benefits__text">
+                Уделяйте больше времени семье, учебе, себе, своим увлечениям. И работайте из любого места.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bonus section">
+        <div class="container">
+          <div class="title bonus__title">
+            БОНУСНАЯ ПРОГРАММА В ZEBRA<span class="blue">CALL</span>
+          </div>
+          <p class="bonus__text">
+            Вы можете получить дополнительные бонусы за:
+          </p>
+          <div class="bonus__content d-flex">
+            <div class="bonus__item d-flex">
+              <span class="bonus__item-text title">
+                Выработку часов
+              </span>
+            </div>
+            <div class="bonus__item d-flex">
+              <span class="bonus__item-text title">
+                Выполнение планов по показателям
+              </span>
+            </div>
+            <div class="bonus__item d-flex">
+              <span class="bonus__item-text title">
+                Выкуп заказов
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="exp section">
+        <div class="exp__inner-wrap">
+          <div class="container">
+            <div class="exp__inner">
+              <div class="title exp__title">
+                А ЧТО, ЕСЛИ У МЕНЯ НЕТ ОПЫТА, И Я НИКОГДА НЕ РАБОТАЛ ОПЕРАТОРОМ?
+              </div>
+              <div class="exp__content">
+                <p class="exp__text">
+                  Не переживайте, если опыта работы нет, мы бесплатно обучим вас навыкам всего за пару дней! Многие работающие сегодня операторы научились всем тонкостям в <span class="yellow bold">ZEBRACALL</span>
+                </p>
+                <p class="exp__text">
+                  Во время разговоров с клиентами вам не придется ничего придумывать, ведь каждый этап продаж подробно расписан в разработанных в <span class="yellow bold">ZEBRACALL</span> скриптах. Это помогает нашим операторам успешно зыкрывать сделки.
+                </p>
+                <p class="exp__text">
+                  Все, что вам потребуется для работы – <span class="yellow bold">компьютер/ноутбук с гарнитурой и с хорошим интернетом</span>
+                </p>
+                <button id="send" class="btn exp__btn script__btn">Оставить заявку</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team section" id="team">
+        <div class="container">
+          <div class="title">КАК ПОПАСТЬ В НАШУ КОМАНДУ</div>
+          <p class="team__text">
+            Всего три простых шага, и вы в <span class="bold">ZEBRA<span class="blue">CALL</span>!</span>
+          </p>
+
+          <div class="team__block d-flex">
+            <div class="team__item d-flex">
+              <span class="team__num">1</span>
+              <div class="team__item-content">
+                <span class="team__item-header">Заявка</span>
+                <span class="team__item-text">
+                  Оставьте заявку, и наш менеджер свяжется с вами в самое ближайшее время! Ответит на все ваши вопросы и расскажет о дальнейших действиях.
+                </span>
+              </div>
+            </div>
+            <div class="team__item d-flex">
+              <span class="team__num">2</span>
+              <div class="team__item-content">
+                <span class="team__item-header">Обучение</span>
+                <span class="team__item-text">
+                  Во время обучения наши профессиональные тренеры раскроют все секреты повышения уровня продаж и обучат необходимым навыкам.
+                </span>
+              </div>
+            </div>
+            <div class="team__item d-flex">
+              <span class="team__num">3</span>
+              <div class="team__item-content">
+                <span class="team__item-header">Работа</span>
+                <span class="team__item-text">
+                  По окончании обучения вы приступаете к работе. Получаете возможность зарабатывать и влиять на свой доход.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="reviews section">
+        <div class="container">
+
+          <div class="title blue">ЧТО ГОВОРЯТ О НАС НАШИ СОТРУДНИКИ</div>
+          <div class="reviews__text">
+            Операторы лучше расскажут, как выглядит работа колл-центра изнутри
+          </div>
+
+          <div class="swiper reviews__slider">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Профессиональные наставники
+                  </div>
+                  <div class="reviews__slide-text">
+                    Я в восторге от службы поддержки, ни разу не оставили меня один на один с проблемой. И это несмотря на то, что я труднообучаемый человек! Да и возраст уже не юный. Думала, уже стара для работы, но нет, все получается! Сейчас зарабатываю больше своего мужа. Кто бы мог подумать! Спасибо наставникам!
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-1.webp" type="image/webp"><img src="img/content/review-1.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Ирина,</span><span class="yellow bold"> 53 года</span>
+                      <span class="reviews__author-mom">пенсионерка</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Зарплата каждую неделю
+                  </div>
+                  <div class="reviews__slide-text">
+                    Выплаты получаю раз в неделю, и это мега-удобно, так как кредиты-ипотеки, кружки у детей, сборы в школу - все в разное время. Впервые за много лет не занимаю деньги у друзей! И впервые за несколько лет тоже приношу доход в семью, несмотря на то, что по-прежнему нахожусь в декрете!
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-2.webp" type="image/webp"><img src="img/content/review-2.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Екатерина,</span><span class="yellow bold"> 38 лет</span>
+                      <span class="reviews__author-mom">мама троих детей</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Быстрый карьерный рост
+                  </div>
+                  <div class="reviews__slide-text">
+                    У меня пары начинаются после обеда - очень неудобное время, поэтому с поиском работы были проблемы. Нашел решение в Zebra. Работаю с самого утра и до пар, потом иду на учебу и еще весь вечер свободен. Никаких пропусков в университете, да еще и зарплата хорошая! В ближайшее время планирую съехать от родителей.
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-3.webp" type="image/webp"><img src="img/content/review-3.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Егор,</span><span class="yellow bold"> 22 года</span>
+                      <span class="reviews__author-mom">студент</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Экономия времени на дороге
+                  </div>
+                  <div class="reviews__slide-text">
+                    Я бывший бухгалтер. Сейчас в декрете, двое маленьких детей. Доход упал, т.к. работает только муж. Но выйти на работу на полноценный графике нет было возможности, да и не хотела возвращаться в офис, тратить время и деньги на дорогу, Поэтому искала удалённую работу. ZEBRACALL - это возможность вести привычный образ жизни сохранить режим семьи и зарабатывать. А также быть полезной и интересной и развиваться в новой профессии.
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-4.webp" type="image/webp"><img src="img/content/review-4.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Наталья,</span><span class="yellow bold"> 28 лет</span>
+                      <span class="reviews__author-mom">мама в декрете </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Быстрый карьерный рост
+                  </div>
+                  <div class="reviews__slide-text">
+                    Я за год сделала карьеру в ZEBRACALL! 3 месяца проработала оператором, затем в отделе контроля качества и всегда показывала лучшие результаты. Когда компания начала расти, необходимо было обучать новых сотрудников, мне предложили стать тренером. Сейчас я продолжаю развиваться и расти в профессии тренера и провела уже более 180 тренингов.
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-5.webp" type="image/webp"><img src="img/content/review-5.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Карина,</span><span class="yellow bold"> 31 год</span>
+                      <span class="reviews__author-mom">тренер</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="reviews__slide">
+                  <div class="reviews__slide-title">
+                    Бонусная программа
+                  </div>
+                  <div class="reviews__slide-text">
+                    Работаю оператором уже 12 лет, В ZEBRACALL пришла полгода назад и очень жалею, что 12 лет назад не было такой компании. Люблю общаться с людьми и помогать им. Я привела в работать в ZEBRACALL своих друзей и старшего сына. Работаю в удобное время. А недавно выиграла в конкурсе на лучшие показатели и получила приз <span style="white-space:nowrap;">30 000 руб.</span>
+                  </div>
+                  <div class="reviews__author">
+                    <div class="reviews__author-img">
+                      <picture>
+                        <source srcset="img/content/review-6.webp" type="image/webp"><img src="img/content/review-6.png" alt="" />
+                      </picture>
+                    </div>
+                    <div class="reviews__author-name">
+                      <span class="blue bold">Ольга,</span><span class="yellow bold"> 45 лет</span>
+                      <span class="reviews__author-mom">профессионал</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="reviews__nav-btns d-flex">
+              <div class="reviews__button reviews__button--prev">
+                <svg class='reviews__button-svg'>
+                  <use href='#prev-arrow'></use>
+                </svg>
+              </div>
+              <div class="reviews__button reviews__button--next">
+                <svg class='reviews__button-svg'>
+                  <use href='#next-arrow'></use>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="faq section">
+        <div class="faq__inner">
+          <div class="container">
+            <div class="title">ОТВЕТЫ НА ПОПУЛЯРНЫЕ ВОПРОСЫ</div>
+
+            <div class="accordeon">
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">01.</span> Если после просмотра вебинара я решу, что мне не подходит эта работа, я могу отказаться от теста?
+                </div>
+                <div class="accordeon__content">
+                  Не отказывайтесь от возможности приобрести новую востребованную профессию абсолютно бесплатно! Тест достаточно простой и, сдав его успешно (а так и будет!), вы сразу гарантированно попадете в нашу команду профессионалов и начнете зарабатывать вместе с нами! <br>
+                  Таких примеров у нас в компании огромное количество!
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">02.</span> Кто будет проводить обучение?
+                </div>
+                <div class="accordeon__content">
+                  Наши тренеры, имеющие богатый опыт и практические навыки продаж. Они проведут не только обучение, но и расскажут все секреты для повышения уровня продаж.
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">03.</span> Какие продукты я буду продавать?
+                </div>
+                <div class="accordeon__content">
+                  Товары для красоты, похудения, здоровья, дома, сада, дачи, интерьера.
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">04.</span> Как отслеживается работа оператора?
+                </div>
+                <div class="accordeon__content">
+                  <p>
+                    В CRM системе отображаются вся статистика и действия операторов (звонки, разговоры с клиентами). Супервайзер в режиме реального времени может наблюдать в каком заказе находится оператор. И по итогам прослушиваний улучшать ваши навыки продаж.
+                  </p>
+                  <p>
+                    А также у каждого оператора есть свой личный кабинет, в котором он может отслеживать свой заработок, показатели, время фактической работы, перерывов, обедов, консультаций и обучения. Это дает прозрачность в работе.
+                  </p>
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">05.</span> Я могу отлучаться от компьютера во время работы?
+                </div>
+                <div class="accordeon__content">
+                  Во время смены оператор может брать перерывы. Также дается время на обед по согласованному с руководителем графику.
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">06.</span> Можно отходить от скрипта?
+                </div>
+                <div class="accordeon__content">
+                  Основной диалог, где вы рассказываете о товаре и мотивируете клиента на покупку, рекомендуется вести по скрипту. Но при необходимости допускается отхождение от него.
+                </div>
+              </div>
+              <div class="accordeon__item">
+                <div class="accordeon__item-header">
+                  <span class="accordeon__num">07.</span> Есть возможность менять график работы?
+                </div>
+                <div class="accordeon__content">
+                  Да, предварительно согласовав изменения с руководителем.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="send" class="btn btn--blue faq__btn script__btn">Оставить заявку</button>
+
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="title footer__logo">
+          zebracall
+        </div>
+        <div class="footer__text">
+          Колл-центр, который дает возможность зарабатывать операторам больше!
+        </div>
+        <a class="footer__link" id="politic" href="politic.html">Политика конфиденциальности</a>
+        <a class="footer__link" id="oferta" href="oferta.html">Публичная оферта</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <svg style="height: 0; width: 0; position: absolute; visibility: hidden;" xmlns="http://www.w3.org/2000/svg">
+
+    <symbol id="wa" viewBox="0 0 40 40">
+      <title>wa</title>
+      <path d="M20.5469 9.99063C18.8378 9.99073 17.1611 10.4563 15.6966 11.3374C14.2322 12.2184 13.0353 13.4817 12.2346 14.9916C11.4339 16.5015 11.0595 18.2009 11.1517 19.9075C11.2439 21.6141 11.7991 23.2633 12.7578 24.6781L11.8384 28.2254L15.5353 27.3628C16.7696 28.1395 18.1674 28.6186 19.6186 28.7623C21.0698 28.9061 22.5345 28.7105 23.8971 28.1912C25.2598 27.6718 26.483 26.8428 27.4703 25.7696C28.4577 24.6964 29.182 23.4084 29.5862 22.0073C29.9904 20.6062 30.0634 19.1303 29.7994 17.6961C29.5354 16.2619 28.9417 14.9088 28.065 13.7434C27.1884 12.578 26.0529 11.6324 24.7482 10.9811C23.4434 10.3298 22.0051 9.99076 20.5469 9.99063ZM25.1734 24.5364C23.8574 25.1536 21.1098 24.8316 18.2152 22.3544C15.3206 19.8772 14.5781 17.2122 14.9844 15.8167C15.3906 14.4213 16.9867 14.1635 17.2878 14.2301C17.5889 14.2967 19.0945 16.6837 18.8894 16.9621C18.6842 17.2406 17.6932 18.2317 17.6932 18.2317C17.6932 18.2317 17.6515 19.2457 19.5123 20.8382C21.373 22.4307 22.3685 22.2328 22.3685 22.2328C22.3685 22.2328 23.1946 21.1 23.438 20.8548C23.6813 20.6095 26.2723 21.7283 26.3847 22.0155C26.497 22.3027 26.489 23.9195 25.173 24.5364H25.1734Z" />
+      <path d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM20.5469 30.7774C18.6695 30.7802 16.8208 30.3162 15.1672 29.4273L9.1172 30.9375L10.6496 25.0156C9.41477 22.8403 8.9311 20.3187 9.2734 17.8408C9.6157 15.363 10.7649 13.067 12.5433 11.3079C14.3216 9.5488 16.63 8.4247 19.1115 8.10943C21.5929 7.79413 24.1091 8.3053 26.2708 9.56377C28.4326 10.8222 30.1194 12.758 31.0705 15.0715C32.0216 17.385 32.1838 19.9475 31.5322 22.3625C30.8806 24.7775 29.4513 26.9105 27.4656 28.4316C25.4799 29.9527 23.0483 30.7772 20.5469 30.7774Z" />
+    </symbol>
+
+    <symbol id="viber" viewBox="0 0 40 40">
+      <title>viber</title>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M22.3125 13.9887C23.0913 14.1547 23.6881 14.4506 24.1981 14.9281C24.8544 15.5478 25.2141 16.2978 25.3722 17.3753C25.4791 18.0778 25.4353 18.3541 25.1863 18.5831C24.9531 18.7962 24.5222 18.8041 24.2613 18.6028C24.0716 18.4606 24.0122 18.3106 23.9687 17.9041C23.9175 17.3631 23.8225 16.9844 23.6603 16.6331C23.3125 15.8872 22.6997 15.5003 21.6641 15.3741C21.1778 15.3147 21.0316 15.2597 20.8734 15.0741C20.5847 14.7306 20.6956 14.1741 21.0947 13.9688C21.245 13.8938 21.3081 13.8859 21.6403 13.9056C21.8463 13.9175 22.1506 13.9531 22.3125 13.9887ZM21.4706 11.0084C23.8703 11.3597 25.7281 12.4728 26.9459 14.2806C27.63 15.2991 28.0569 16.495 28.2031 17.7778C28.2544 18.2475 28.2544 19.1041 28.1991 19.2463C28.1475 19.3803 27.9816 19.5619 27.8394 19.6369C27.6853 19.7159 27.3572 19.7078 27.1753 19.6131C26.8709 19.4591 26.78 19.2144 26.78 18.5512C26.78 17.5291 26.515 16.4512 26.0566 15.6144C25.5347 14.6591 24.7756 13.8697 23.8506 13.3209C23.0559 12.8472 21.8819 12.4959 20.8106 12.4091C20.4231 12.3775 20.2097 12.2984 20.0634 12.1288C19.8381 11.8722 19.8144 11.5247 20.0041 11.2366C20.2094 10.9178 20.5256 10.8663 21.4706 11.0084ZM12.1606 8.57313C12.2991 8.62063 12.5125 8.73093 12.635 8.81C13.3859 9.3075 15.4772 11.9797 16.1612 13.3138C16.5525 14.0756 16.6831 14.64 16.5606 15.0584C16.4341 15.5084 16.2247 15.7453 15.2875 16.4991C14.9119 16.8028 14.56 17.1147 14.5047 17.1978C14.3625 17.4031 14.2478 17.8056 14.2478 18.09C14.2519 18.7491 14.6788 19.9453 15.24 20.865C15.6747 21.5794 16.4534 22.495 17.2244 23.1978C18.1297 24.0269 18.9281 24.5913 19.8297 25.0372C20.9881 25.6134 21.6956 25.7594 22.2134 25.5188C22.3438 25.4594 22.4822 25.3806 22.5256 25.345C22.565 25.3094 22.8697 24.9384 23.2016 24.5278C23.8419 23.7225 23.9881 23.5922 24.4272 23.4422C24.9847 23.2528 25.5538 23.3041 26.1272 23.5963C26.5622 23.8213 27.5109 24.4094 28.1234 24.8356C28.93 25.4 30.6534 26.8053 30.8869 27.0856C31.2978 27.5909 31.3691 28.2381 31.0925 28.9528C30.8 29.7066 29.6616 31.1197 28.8669 31.7237C28.1475 32.2684 27.6375 32.4775 26.9653 32.5091C26.4119 32.5366 26.1825 32.4894 25.475 32.1972C19.925 29.9119 15.4934 26.5016 11.975 21.8159C10.1369 19.3687 8.7372 16.8306 7.78063 14.1978C7.22313 12.6625 7.19563 11.9953 7.65407 11.2097C7.85187 10.8781 8.69377 10.0572 9.30657 9.59937C10.3266 8.84157 10.7969 8.56123 11.1725 8.4822C11.4294 8.42687 11.8763 8.4703 12.1606 8.57313ZM21.1978 8.14687C22.5578 8.31657 23.6566 8.64407 24.8625 9.2325C26.0484 9.8128 26.8075 10.3616 27.8116 11.36C28.7525 12.3034 29.2744 13.0178 29.8278 14.1269C30.5987 15.6741 31.0375 17.5137 31.1125 19.5384C31.1403 20.2291 31.1203 20.3831 30.9622 20.5806C30.6619 20.9634 30.0016 20.9003 29.7762 20.47C29.705 20.3278 29.6853 20.2056 29.6616 19.6528C29.6219 18.8041 29.5628 18.2556 29.4441 17.6003C28.9775 15.0306 27.7441 12.9781 25.7753 11.5056C24.1347 10.2741 22.4387 9.67407 20.2172 9.54377C19.4659 9.5003 19.3356 9.4728 19.1656 9.3425C18.8494 9.09373 18.8334 8.5097 19.1378 8.2372C19.3238 8.0675 19.4541 8.04373 20.0984 8.06343C20.435 8.07563 20.9291 8.1153 21.1978 8.14687ZM20 0C31.0456 0 40 8.95437 40 20C40 31.0456 31.0456 40 20 40C8.95437 40 0 31.0456 0 20C0 8.95437 8.95437 0 20 0Z" />
+    </symbol>
+
+    <symbol id="telegram" viewBox="0 0 40 40">
+      <title>telegram</title>
+      <path d="M20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0ZM30.3952 12.6513L26.843 29.6094C26.8001 29.8145 26.7062 30.0055 26.5702 30.1649C26.4341 30.3243 26.2602 30.4469 26.0643 30.5215C25.8685 30.5961 25.6571 30.6203 25.4494 30.5919C25.2418 30.5635 25.0447 30.4833 24.8761 30.3588L19.7092 26.5416L16.5789 29.4947C16.5379 29.5333 16.4897 29.5635 16.4369 29.5833C16.3842 29.6031 16.328 29.6121 16.2717 29.61C16.2155 29.6079 16.1602 29.5945 16.1091 29.5708C16.058 29.5471 16.0121 29.5134 15.9742 29.4717L15.907 29.3978L16.4509 24.1341L26.2543 15.177C26.3028 15.1328 26.3329 15.072 26.3388 15.0067C26.3447 14.9413 26.3258 14.8761 26.286 14.824C26.2462 14.7718 26.1882 14.7365 26.1236 14.725C26.059 14.7134 25.9925 14.7265 25.937 14.7616L13.3996 22.6968L8 20.8834C7.85643 20.8351 7.7313 20.7437 7.64177 20.6215C7.55223 20.4993 7.50273 20.3524 7.49997 20.201C7.49723 20.0496 7.54143 19.901 7.62647 19.7757C7.71153 19.6503 7.83327 19.5544 7.975 19.501L29.1016 11.5425C29.2645 11.4812 29.441 11.4648 29.6125 11.495C29.784 11.5252 29.9442 11.6009 30.0764 11.7142C30.2086 11.8275 30.3079 11.9742 30.364 12.1391C30.4201 12.3039 30.4309 12.4808 30.3952 12.6513Z" />
+    </symbol>
+
+    <symbol id="prev-arrow" viewBox="0 0 30 30">
+      <title>prev-arrow</title>
+      <path d="M29.4993 11.3821H14.2433C13.9669 11.3821 13.9213 11.2467 14.1413 11.0795L17.8684 8.24938C18.0885 8.08225 18.2669 7.72281 18.2669 7.44644V1.39421C18.2669 1.11784 18.0887 1.02959 17.8689 1.19721L0.16488 14.6965C-0.0549601 14.8641 -0.0549601 15.1357 0.16488 15.3033L17.8691 28.8027C18.0889 28.9704 18.2671 28.8821 18.2671 28.6057V22.5535C18.2671 22.2771 18.0886 21.9176 17.8685 21.7506L14.1416 18.9204C13.9213 18.7533 13.9671 18.6179 14.2435 18.6179H29.4996C29.776 18.6179 30 18.3938 30 18.1174V11.8826C29.9997 11.6061 29.7757 11.3821 29.4993 11.3821Z" />
+    </symbol>
+
+    <symbol id="next-arrow" viewBox="0 0 30 30">
+      <title>next-arrow</title>
+      <path d="M0.50069 11.3821H15.7567C16.0331 11.3821 16.0787 11.2467 15.8587 11.0795L12.1316 8.24938C11.9115 8.08225 11.7331 7.72281 11.7331 7.44644V1.39421C11.7331 1.11784 11.9113 1.02959 12.1311 1.19721L29.8351 14.6965C30.055 14.8641 30.055 15.1357 29.8351 15.3033L12.1309 28.8027C11.9111 28.9704 11.7329 28.8821 11.7329 28.6057V22.5535C11.7329 22.2771 11.9114 21.9176 12.1315 21.7506L15.8584 18.9204C16.0787 18.7533 16.0329 18.6179 15.7565 18.6179H0.500364C0.223997 18.6179 -4.00543e-05 18.3938 -4.00543e-05 18.1174V11.8826C0.000286102 11.6061 0.224323 11.3821 0.50069 11.3821Z" />
+    </symbol>
+
+  </svg>
+
+  <script src="js/libs.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
